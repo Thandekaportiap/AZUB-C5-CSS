@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css flexbox and Grid</title>
+    <style>
+        .grid {
+            display: grid;
+            flex-wrap: wrap;
+            background-color: beige;
+            padding: 12px;
+            text-align: center;
+            gap: 10px;
+            border: 2px;
+        }
+        .grid > div {
+            padding: 20px;
+            font-size: 40px;
+            background-color: aqua;
+        }
+
+
+    .logo {
+            grid-column: 1 / span 6;
+  grid-row: 1;
+        }
+        .header {
+            grid-column: 1 / span 6;
+  grid-row: 2;
+        }
+        .navigation {
+            grid-column: 1 / span 6;
+            grig-row: 3;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+        }
+        .about {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 4;
+            grid-row-end: 5; 
+        }
+        .links {
+            grid-column-start: 3;
+            grid-column-end: 7;
+            grid-row: 4,5;
+        }
+        .info {
+            grid-column: 1/ span 6;
+            grid-row: 6;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="grid" id="flex">
+    <div class="logo"><p>Company logo and slogan</p></div>
+    <div class="header">Header</Header></div>
+    <div class="navigation">Navigation...
+        <div> </div>
+        <div> </div>
+        <div> </div>
+    </div>
+    <div class="about">About</div>
+    <div class="links">Quick links</div>
+    <div class="links">Quick links</div>
+    <div class="info">Site plan and copyright info</div>
+</div>
+</body>
+</html>
